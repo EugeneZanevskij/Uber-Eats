@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="images/logo.svg" alt="Logo" class="logo">
+                <ul class="nav-links">
+                    <li class="sign-up"><a href="#">Войти</a></li>
+                    <li class="basket"><a href="#"><img src="images/basket.svg" alt="Basket" class="nav-item"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-7 col-xs-12">
+                        <div class="hero-cont">
+                            <h1 class="hero-cont__heading">
+                                Трактир «Пушкин»
+                            </h1>
+                            <div class="hero-cont__bottom">
+                                <p class="hero-cont__bottom_type">
+                                    ₽₽₽ • Европейская
+                                </p>
+                                <p class="hero-cont__bottom_time">
+                                    40 - 50 мин
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="food_type">
+            <div class="container">
+                <ul class="row">
+                    <a href="#snacks"><li class="snacks_nav">Закуски</li></a>
+                    <a href="#"><li class="salads_nav active">Салаты</li></a>
+                    <a href="#"><li class="soups_nav">Супы</li></a>
+                    <a href="#"><li class="hot_meals_nav">Горячие блюда</li></a>
+                    <a href="#"><li class="side_dishes_nav">Гарниры</li></a>
+                    <a href="#"><li class="dessert_nav">Десерты</li></a>
+                </ul>
+            </div>
+        </section>
+        <section class="snacks" id="snacks">
+            <div class="container">
+                <div class="food_type__heading section_heading">Закуски</div>
+                <div class="cards">
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="food-card">
+                                <div class="food-card__left">
+                                    <div class="food-info">
+                                        <p class="food_info__name">Сельдь на бородинском хлебе</p>
+                                        <p class="food_info__desc">С яйцом и огурцом</p>
+                                    </div>
+                                    <p class="food__price">240 ₽</p>
+                                </div>
+                                <img src="images/rest/photo.png" alt="food1" class="food_info__image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="food-card">
+                                <div class="food-card__left">
+                                    <div class="food-info">
+                                        <p class="food_info__name">Соленья ассорти</p>
+                                    </div>
+                                    <p class="food__price">320 ₽</p>
+                                </div>
+                                <img src="images/rest/photo-1.png" alt="food2" class="food_info__image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="food-card">
+                                <div class="food-card__left">
+                                    <div class="food-info">
+                                        <p class="food_info__name">Грибы маринованные</p>
+                                    </div>
+                                    <p class="food__price">300 ₽</p>
+                                </div>
+                                <img src="images/rest/photo-2.png" alt="food3" class="food_info__image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="food-card">
+                                <div class="food-card__left">
+                                    <div class="food-info">
+                                        <p class="food_info__name">Сало домашнее с горчицей</p>
+                                    </div>
+                                    <p class="food__price">320 ₽</p>
+                                </div>
+                                <img src="images/rest/photo-3.png" alt="food4" class="food_info__image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="food-card">
+                                <div class="food-card__left">
+                                    <div class="food-info">
+                                        <p class="food_info__name">Малосольная семга</p>
+                                    </div>
+                                    <p class="food__price">390 ₽</p>
+                                </div>
+                                <img src="images/rest/photo.png" alt="food1" class="food_info__image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="food-card">
+                                <div class="food-card__left">
+                                    <div class="food-info">
+                                        <p class="food_info__name">Язык говяжий с хреном</p>
+                                    </div>
+                                    <p class="food__price">350 ₽</p>
+                                </div>
+                                <img src="images/rest/photo.png" alt="food1" class="food_info__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                    <img src="images/white-logo.svg" alt="Logo" class="white-logo">
+            </div>
+            <div class="row">
+                <div class="footer-col col-sm-4 col-xs-12">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><img src="images/world.svg" alt="Language">Русский</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Русский
+                            <a href="#">Беларуская
+                            <a href="#">English
+                        </div>
+                    </div>
+                    <div class="hashtag">
+                        <a href="#"><span class="green">#</span>UberEats</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col col-sm-4 col-xs-12">
+                    <ul>
+                        <li><a href="#">Об UberEats</a></li>
+                        <li><a href="#">Станьте партнёром по доставке</a></li>
+                        <li><a href="#">Станьте партнёром-рестораном</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-sm-4 col-xs-12">
+                    <ul>
+                        <li><a href="#">Все города</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row download">
+                <a href="#"><img src="images/app_store.png" alt="App Store"></a>
+                <a href=""><img src="images/google_play.png" alt="Google Play"></a>
+            </div>
+            <div class="row">
+                <div class="footer-col col-sm-4 col-xs-12">
+                    <a href="#">© 2017 Uber Technologies Inc.</a>
+                </div>
+                <div class="footer-col col-sm-4 col-xs-12">
+                    <a href="#">Обработка персональных данных</a>
+                </div>
+                <div class="footer-col col-sm-4 col-xs-12">
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/images/arrow.svg" alt="To top"></button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

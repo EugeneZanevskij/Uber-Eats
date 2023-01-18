@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .wrapper {
+    width: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+    padding: 0 8px;
+} */
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*Header*/
+
+.header {
+    height: 72px;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.header .container {
+    position: fixed;
+    background: #FFFFFF;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.navbar {
+    height: 72px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 16px;
+}
+
+.sign-up {
+    padding: 14px 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.button-sign-up:hover{
+    background-color: silver;
+}
+
+.basket {
+    padding: 0 10px;
+}
+
+/*Search*/
+
+.form-search {
+    padding: 56px 0;
+}
+
+.button-search {
+    font-weight: 400;
+    line-height: 24px;
+    color: #626262;
+    opacity: 0.5;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+/*Restaurants*/
+
+.restaurants {
+    margin: 0 0 64px 0;
+}
+
+.section_heading {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+}
+.restaurants-moscow {
+    margin: 0 0 16px 0;
+}
+
+.card{
+    padding: 0 0 16px 0;
+}
+.page-img{
+    margin:0 0 0 0;
+    width: 100%;
+}
+
+.bottom-card {
+    margin: 16px 0 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 150%;
+    color: #1D1D1D;
+}
+
+.store-name {
+    font-size: 16px;
+}
+.store-type {
+    font-size: 14px;
+    color: #626262;
+
+}
+.store-time {
+    font-size: 13px;
+    line-height: 162%;
+}
+
+
+
+/*Footer*/
+
+.footer {
+    background: #262626;
+    font-size: 13px;
+}
+
+.white-logo {
+    margin-top: 56px;
+    width: fit-content;
+}
+
+.footer .row {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 40px;
+}
+
+.footer .row:last-of-type {
+    border-bottom: none;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.dropdown {
+    width: 75%;
+}
+
+.dropbtn {
+    background: #3B3B3B;
+    border-radius: 2px;
+    color: white;
+    width: 100%;
+    padding: 12px 0 12px 16px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropbtn img {
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #626262;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #757575;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(155, 146, 146);
+}
+
+.show {
+    display:block;
+}
+
+.hashtag {
+    font-size: 16px;
+    margin: 33px 0 17px;
+}
+
+.green {
+    color: green;
+}
+
+.fa-brands {
+    width: 24px;
+}
+
+.footer-col {
+    margin-top: 39px;
+}
+.footer-col li {
+    margin-bottom: 23px;
+}
+
+.download {
+    flex-direction: row !important;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.download img {
+    display:block;
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 576px) {
+    .header .container {
+        width: 100%;
+    }
+    .basket {
+        display: none;
+    }
+    .footer .row {
+        flex-direction: column;
+    }
+    .footer-col {
+        margin-top: 24px;
+    }
+    .footer-col ul li:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .dropdown {
+        width: 58%;
+    }
+}
+
+.hero {
+    background: url('images/rest/traktir_pushkin.png') no-repeat center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.hero-cont {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    padding: 38px;
+}
+
+.hero-cont__heading {
+    font-size: 36px;
+    color: #1D1D1D;
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+
+.hero-cont__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.hero-cont__bottom_type {
+    color: #626262;
+}
+
+.hero-cont__bottom_time {
+    color: #FFFFFF;
+    padding: 8px 11px;
+    background: #262626;
+    border-radius: 16px;
+}
+
+ul.row {
+    margin: 30px 0;
+}
+
+.row li {
+    color: #626262;
+    margin-right: 40px;
+}
+
+.active {
+    color: #327430
+}
+
+.snacks {
+    margin-top: 56px;
+    margin-bottom: 31px;
+}
+
+.food_type__heading {
+    margin-bottom: 32px;
+}
+
+.food-card {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #aaa;
+    border-radius: 1px;
+    margin-bottom: 49px;
+}
+
+.food-card__left {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.food_info__name {
+    margin-bottom: 8px;
+}
+
+.food_info__desc {
+    font-size: 13px;
+color: #626262;
+}
+
+.food_info__image {
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+    .food-card__left {
+        padding: 0 0 16px 0;
+    }
+    .food_info__image {
+        width: 102px;
+    }
+    .food_type {
+        display: none;
+    }
+    .food-card {
+        margin-bottom: 16px;
+    }
+    .snacks {
+        margin-bottom: 24px;
+    }
+    .food_type__heading {
+        text-align: center;
+        position: relative;
+        margin-bottom: 56px;
+    }
+    .food_type__heading::after {
+        content: ''; /* Выводим пустое содержимое */
+        position: absolute; /* Абсолютное позиционирование */
+        background: #757575; /* Цвет линии */
+        left: 50%;
+    transform: translate(-50%, 0);
+        bottom: -12px; /* Положение линии */
+        width: 50px; /* Линия на ширину текста */
+        height: 1px; /* Высота линии */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero {
+        background-size: contain;
+        background-position: top;
+        padding: 131px 0 0;
+    }
+    .hero-cont {
+        text-align: center;
+        padding: 24px;
+    }
+    .hero-cont__heading {
+        margin-bottom: 40px;
+    }
+    
+    .hero-cont__bottom {
+        flex-direction: column;
+        gap:16px;
+    }
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 24px; /* Place the button at the bottom of the page */
+    right: 16px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    background: #59BD5A;
+    border-radius: 2px;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 27px 32px; /* Some padding */
+}
+
+#myBtn:hover {
+    background-color: rgb(29, 99, 18); /* Add a dark-grey background on hover */
+}
